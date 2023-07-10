@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericsPractiseList
 {
-    public class PracticeList<T> 
+    public class PracticeList<T> where T : IComparable
     {
         private T[] items;
         
@@ -42,3 +42,4 @@ namespace GenericsPractiseList
         }
     }
 }
+
